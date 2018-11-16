@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gentry Roofing - Testimonials</title>
+    <link rel="stylesheet" href="gentryroofing.css"/>
+    <link rel="stylesheet" href="slideshow.css"/>
+</head>
+<body>
+<div class="root-container">
+    <div class="root-content">
+        <img src="img/header-logo.jpg"/>
+    </div>
+    <div class="root-content">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Company Profile</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="products.html">Product Line</a></li>
+                <li><a href="projects.html">Our Projects</a></li>
+                <li><a href="testimonials.html" class="active">Testimonials</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="root-content background--white">
+        <div class="flex padding-norm">
+            <h2>Gentry Roofing Customer Testimonials</h2>
+            <div class="font-size--15px">
+                <p>For over 35 years, we have prided ourselves on our superior customer service.  We understand that your decision to put a new roof on your home or building is a substantial one and since a roof protects your entire home, we also understand the importance in trusting your roofing contractor. To help you in your decision, we have provided a list of testimonials from customers about our roof installations below. Enjoy.</p>
+                <p><strong>If you would like for us to provide a roofing estimate for your home, please don’t hesitate to fill out our <a href="contact_us.html">online request form</a> or call John Howard at <a href="tel:8163612353">816-361-2353</a>.</strong></p>
+            </div>
+
+            <hr>
+
+            <h3>Customer Testimonial from Jenny in Fairway, KS</h3>
+
+            <div class="font-size--15px">
+                <p>December 7, 2010</p>
+                <p>When I bought my home it had a 20 year old asphalt roof on it. It also had 3 layers of roof, so because of city ordinances, I had to remove all three layers (three layers was the limit) and start from scratch.</p>
+                <p>Gentry Roofing was recommended to me by a family friend – so I decided to go with them. I also knew that I wanted a DaVinci Slate Gray roof in the staggered pattern – and I knew that Gentry Roofing and John Howard were pros at installing DaVinci.</p>
+                <p>My roof is a 50-year roof – I am only 5 years into the 50 years, but so far so good! I might not have to use Gentry Roofing again – but should I move and need another new roof, I will certainly give them a call. I would recommend them to anyone.</p>
+            </div>
+            <div>
+                <!-- SlideShow -->
+                <div class="slideshow-container background--light">
+
+                    <div class="mySlides fade" style="max-height: 400px;">
+                        <div class="numbertext">1 / 3</div>
+                        <div class="center--children" style="max-height: 400px;"><img src="img/testimonials/5512FairwayRoadSlateGray5-450x600.jpg" height="400px"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <div class="center--children" style="max-height: 400px;"><img src="img/testimonials/5512FairwayRoadSlateGray6-600x450.jpg" height="400px"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <div class="center--children" style="max-height: 400px;"><img src="img/testimonials/5512FairwayRoadSlateGray7-450x600.jpg" height="400px"></div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
+                </div>
+            </div>
+
+            <hr>
+
+            <h3>Add Your Testimonial Here!</h3>
+
+            <form action="mailto:info@gentryroofing.com?subject=Testimonial" method="post" enctype="text/plain" id="testimonial">
+                Name:<br>
+                <input type="text" name="firstname" required><br>
+                Project Photo 1:<br>
+                <input type="file" name="pic1" accept="image/*"><br>
+                Project Photo 2:<br>
+                <input type="file" name="pic2" accept="image/*"><br>
+                Project Photo 3:<br>
+                <input type="file" name="pic3" accept="image/*"><br>
+
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+            </form>
+
+            Comments:<br>
+            <textarea name="comments" form="testimonial" required></textarea>
+
+        </div>
+    </div>
+    <div class="root-content background--lighter center--children root-footer">
+        <p>© Copyright 2019 Gentry Roofing, Kansas City, MO. All rights reserved.</p>
+    </div>
+</div>
+<script src="js/slideshow.js"></script>
+<script>showSlides(1, 0);</script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+html {
+    --page-background: #14212f;
+    --page-background-dark: #0e1922;
+    --page-background-light: #1d2e3e;
+    --page-background-lighter: #3c566b;
+    --page-size: 960px;
+
+    --magic-num: 4;
+
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--page-background, black);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    z-index: 0;
+}
+
+img {
+    user-select: none;
+}
+
+hr {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+
+/*
+    Navigation
+*/
+
+nav {
+    width: var(--page-size);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--page-background-dark);
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: var(--page-background-light);
+}
+nav li .active:hover {
+    background-color: var(--page-background-dark);
+}
+
+/*
+    Page Content
+*/
+
+.root-container {
+    display: flex;
+    flex-flow: column;
+    z-index: 1;
+}
+
+.root-container .root-content {
+    flex: 0 0 auto;
+    display: flex;
+    flex-flow: row;
+    overflow-y: auto;
+    height: 100%;
+    width: var(--page-size);
+}
+
+.root-container .root-content .content-pane {
+    width: 100%;
+}
+
+.root-container .root-content .content-pane img, .root-container .root-content .content-pane div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.root-container .root-content .content-pane img {
+    width: 130px;
+}
+.root-container .root-content .content-pane div {
+    width: calc(100% - 146px);
+}
+
+
+.page-content {
+    display: flex;
+    width: var(--page-size);
+    flex-flow: row;
+    justify-content: center;
+    height: 100%;
+}
+
+.page-content .small {
+    flex: 1 0 340px;
+}
+
+.page-content .flex {
+    flex: 1 1 auto;
+}
+
+.root-container .root-footer {
+    height: 32px;
+    color: white;
+    font-size: 10px;
+    overflow-y: hidden;
+}
+
+.link {
+    color: white;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+/*
+    Utils
+*/
+
+.background--dark {
+    background-color: var(--page-background-dark)
+}
+
+.background--light {
+    background-color: var(--page-background-light);
+}
+
+.background--lighter {
+    background-color: var(--page-background-lighter);
+}
+
+.background--white {
+    background-color: white;
+}
+
+.color--white {
+    color: white;
+}
+
+.padding-norm {
+    padding: calc(var(--magic-num) * 4px);
+}
+
+.float--right {
+    float: right;
+}
+
+.float--left {
+    float: left;
+}
+
+.center--children {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display--inline-block {
+    display: inline-block;
+}
+
+.font-size--15px {
+    font-size: 15px;
+}
