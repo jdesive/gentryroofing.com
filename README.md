@@ -6,4 +6,4 @@ Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Publi
 [link](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 ## Author
-* [jdesive](https://guithub.com/jdesive)
+* [jdesive](https://github.com/jdesive)
